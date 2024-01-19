@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Agendamentos</title>
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+
+<h1>Lista de Agendamentos</h1>
+
+<label for="filterDate">Filtrar por Data:</label>
+<select id="filterDate" onchange="filterAppointments()">
+    <option value="all">Todas as Datas</option>
+</select>
+
+<table>
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Data</th>
+            <th>Tipo de Serviço</th>
+            <th>Horário</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody id="appointmentsList"></tbody>
+</table>
+
+<script src="js/script2.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento de Serviço</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h3>Agendamento de Serviço</h3>
+    <a href="login.html" class="login-button">Login</a>
+</header>
+
+<form id="appointmentForm">
+    <label for="clientName">Nome do Cliente:</label>
+    <input type="text" id="clientName" required>
+
+    <label for="appointmentDate">Data para o Corte:</label>
+    <input type="date" id="appointmentDate" required>
+
+    <label for="serviceType">Tipo de Serviço:</label>
+    <select id="serviceType" required>
+        <option value="" disabled selected>Selecione o tipo de serviço</option>
+        <option value="barba">Barba</option>
+        <option value="cabelo">Cabelo</option>
+        <option value="cabelo e Barba">Cabelo e Barba</option>
+    </select>
+
+    <label for="appointmentTime">Horário para o Serviço:</label>
+    <select id="appointmentTime" required></select>
+
+    <button type="button" onclick="scheduleAppointment()">Agendar Serviço</button>
+</form>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

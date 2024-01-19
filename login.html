@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style1.css">
+</head>
+<body>
+
+<form>
+    <h2>Login</h2>
+    <label for="username">Usuário:</label>
+    <input type="text" id="username" required>
+    <label for="password">Senha:</label>
+    <div class="password-container">
+        <input type="password" id="password" required>
+        <button type="button" id="password-toggle" onclick="togglePassword()">Mostrar</button>
+    </div>
+    <button type="button" onclick="login()">Entrar</button>
+    <p id="error-message"></p>
+    <p><a href="#">Esqueci minha senha</a></p>
+</form>
+
+<footer>
+    <p>Não tem uma conta? <a href="#">Crie uma agora</a></p>
+</footer>
+
+<script src="js/script1.js"></script>
+
+</body>
+</html>
